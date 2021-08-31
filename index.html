@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"
+
+</head>
+<title>Family Book</title>
+<body>
+  <center>
+    <hr> <hr>
+    <img id="Family_img" src="Family Book Image.jpg">
+    <h1 id="one">Our Family Book</h1>
+    <button type="button" onclick="family()">Next</button>
+    <hr>
+</center>
+    <script>
+        var names=[
+       "Vikas Patni",
+       "Arpana Jain",
+"Gyan Chand Ji Patni",
+"Jambu Devi Patni",
+"Vidhyansh Patni",
+"Garima Patni",
+"Avish Patni"
+];
+var images=[
+"PAPA.jpg",
+   "MUMMY.jpg",
+    "Dada.jpg",
+    "Dadi.jpg",
+    "Vidhyansh.jpg",
+    "Garima.jpg",
+    "Avish.jpg",
+];
+var i=0;
+function family() {
+    document.getElementById("one").innerHTML=names[i] ;
+    document.getElementById("Family_img").src=images[i];
+    i++;
+    if(i==7){
+        i==0;
+    }
+}
+
+       
+    </script>
+</body>
+</body>
+</html>
+  
+  
